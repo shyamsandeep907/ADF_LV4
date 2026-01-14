@@ -1,0 +1,41 @@
+{
+	"name": "DS_srfradf_customer",
+	"properties": {
+		"description": "Sample customer date for testing purpose",
+		"linkedServiceName": {
+			"referenceName": "LS_frintelADF",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Customer.txt",
+				"fileSystem": "srfradf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CustomerCode",
+				"type": "String"
+			},
+			{
+				"name": " CustomerName",
+				"type": "String"
+			},
+			{
+				"name": " Address",
+				"type": "String"
+			},
+			{
+				"name": " PhoneNumber",
+				"type": "String"
+			}
+		]
+	}
+}
