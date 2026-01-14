@@ -1,7 +1,7 @@
 {
-	"name": "DS_srfradf_customer",
+	"name": "DS_srfradf_PurchaseOrder",
 	"properties": {
-		"description": "Sample customer data for testing purpose",
+		"description": "Sample Purchase Order data for testing purpose",
 		"linkedServiceName": {
 			"referenceName": "LS_frintelADF",
 			"type": "LinkedServiceReference"
@@ -11,7 +11,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Customer.txt",
+				"fileName": "PurchaseOrder.txt",
 				"fileSystem": "srfradf"
 			},
 			"columnDelimiter": ",",
@@ -21,19 +21,31 @@
 		},
 		"schema": [
 			{
-				"name": "CustomerCode",
+				"name": "PurchaseOrderID",
 				"type": "String"
 			},
 			{
-				"name": " CustomerName",
+				"name": " CustomerCode",
 				"type": "String"
 			},
 			{
-				"name": " Address",
+				"name": "ProductCode",
 				"type": "String"
 			},
 			{
-				"name": " PhoneNumber",
+				"name": "EmployeeCode",
+				"type": "String"
+			},
+			{
+				"name": " PuchaseOrderDate",
+				"type": "String"
+			},
+			{
+				"name": " Quantity",
+				"type": "String"
+			},
+			{
+				"name": " UnitPrice",
 				"type": "String"
 			}
 		]
