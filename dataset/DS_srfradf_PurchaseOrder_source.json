@@ -1,5 +1,5 @@
 {
-	"name": "DS_srfradf_PurchaseOrder",
+	"name": "DS_srfradf_PurchaseOrder_source",
 	"properties": {
 		"description": "Sample Purchase Order data for testing purpose",
 		"linkedServiceName": {

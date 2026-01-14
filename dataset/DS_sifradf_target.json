@@ -1,0 +1,23 @@
+{
+	"name": "DS_sifradf_target",
+	"properties": {
+		"description": "This is the target location for the latest modified or copied data from source.",
+		"linkedServiceName": {
+			"referenceName": "LS_frintelADF",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "sifradf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

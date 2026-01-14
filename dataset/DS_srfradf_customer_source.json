@@ -1,5 +1,5 @@
 {
-	"name": "DS_srfradf_customer",
+	"name": "DS_srfradf_customer_source",
 	"properties": {
 		"description": "Sample customer data for testing purpose",
 		"linkedServiceName": {
