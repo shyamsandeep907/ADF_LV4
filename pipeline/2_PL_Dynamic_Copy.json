@@ -1,9 +1,9 @@
 {
-	"name": "1_PL_Copy_Purchase_Orders",
+	"name": "2_PL_Dynamic_Copy",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy Purchase Orders",
+				"name": "Copy Dynamic",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -49,8 +49,14 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_srfradf_PurchaseOrder_source",
-						"type": "DatasetReference"
+						"referenceName": "DS_stfradf_Dynamic_source",
+						"type": "DatasetReference",
+						"parameters": {
+							"FileName": {
+								"value": "@pipeline().parameters.Filename",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -61,6 +67,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"Filename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
