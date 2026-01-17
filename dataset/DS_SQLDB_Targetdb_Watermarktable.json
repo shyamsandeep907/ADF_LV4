@@ -1,0 +1,30 @@
+{
+	"name": "DS_SQLDB_Targetdb_Watermarktable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_DB_Targetdb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "SQL-DataSet"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TableName",
+				"type": "varchar"
+			},
+			{
+				"name": "WatermarkValue",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "watermarktable"
+		}
+	}
+}

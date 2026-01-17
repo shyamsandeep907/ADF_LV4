@@ -1,8 +1,8 @@
 {
-	"name": "DS_SQLDB_Sourcedb_invoice",
+	"name": "DS_SQLDB_Targetdb_orders",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_SQL_DB_Sourcedb",
+			"referenceName": "LS_SQL_DB_Targetdb",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
@@ -12,7 +12,7 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "InvoiceID",
+				"name": "OrderID",
 				"type": "int",
 				"precision": 10
 			},
@@ -44,7 +44,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "invoice"
+			"table": "orders"
 		}
 	}
 }
