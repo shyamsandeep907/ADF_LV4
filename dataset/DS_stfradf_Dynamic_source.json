@@ -11,6 +11,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "ADLS-DataSets"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

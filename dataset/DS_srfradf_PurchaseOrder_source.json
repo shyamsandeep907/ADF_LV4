@@ -6,6 +6,9 @@
 			"referenceName": "LS_frintelADF",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "ADLS-DataSets"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
